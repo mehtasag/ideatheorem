@@ -96,9 +96,9 @@ const SignUp = () => {
   };
   const handleSubmit = async () => {
     formValidation();
-
+   
     if (values.password !== values.confirmPassword) return;
-
+   
     const postData = {
       full_name: values.fullName,
       contact_number: values.contactNumber,
@@ -115,13 +115,14 @@ const SignUp = () => {
     });
 
     const resultData = await responseData.json();
-
     setResponse(resultData);
   };
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
+
+
 
   return (
     <>
