@@ -1,0 +1,15 @@
+.signUp__Error {
+  font-size: 12px;
+  padding: 3px;
+  color: #da1e28;
+  display: none;
+  font-family: var(--font-family);
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid #da1e28;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
+  font-family: var(--font-family);
+}
